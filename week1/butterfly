@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1: ASCII ART IN HTML</title>
+</head>
+<body>
+    <h1>ASCII ART</h1>
+    <p>I love capybara</p >
+    <pre>
+                                                                                    
+    ..,,,,'..                                                               
+       .lOOOOO0Okdl;'.                                       ..,:looddolc.      
+       .dOOOOOOOOO00Oxo:'.....                           .':lxkOOOOOOOOOOc      
+       .dOOOOOO00000000K0kdoc;,..               ..,;:::cokO0000000OOOOOOOc      
+       .cOOOO0000000K00KKKXXKOxl:,..          .,:lxO0KXXK0000000000OOOOOk:      
+        .dOOO000000000KKO0KXXXXKOdc,..      .';lx0XNNXXK00KKK0000000OOOOl.      
+         :kOOO000000000000KKKXXXXKxc,.     .':dOXXXXXKKKO0K000000000OOOd'       
+         .dOOO0000000000000KKKKXXXKd,..   ..;xKXXXKKKK0000000000000OOOk:        
+          ;kOOOO000000000000000KKKK0o. .. .;xKKKKKK000000000000000OOOOo.        
+          .:kOOO000000000000000000KK0x;..'o0KKK000000000000000000OOOOd'         
+            'ok0000OO000000000000000KKx:;dKK000000000000000000000OOkl.          
+              'cxO0000000000000000000KxookKK000000000000000KKKKK0xc.            
+              .,cok0KK0OOO0000000OO000kddOK0000000000000000KXX0kl,.             
+             .'cx0XXK0OOOOOOOOOOOOOOO0xc:x0OOOOOOOO00000O00XNNKOd:.             
+              .:OXXK0OOOOOOOOOOOOOOOOKd''dKOOOOOOOOOOOOOOO00KXNKd;.             
+               cOO00OOOOOOO0OOOOkkOO0Xx,;xX0OOOOOOOO00OOOOOO0KK0d'              
+               :OOO0OOOOOOOOOkkkkOO0KXkllOXK0OOOkOOO00OOOOOO00OOd.              
+               .dOOO0OOOkkkkkkkkkOO0KXkclkNXK00OkkkkkOOOOOOO0OOk:               
+                'dOO00OkkkkkkkkkkO00KKl.'oXXK00OkkkkkkOOOOO0OOkc.               
+                 .oOOOOOOkkkkkkkOO00KO'  ,OXK0OOkkkkkkkOOOOOOk:                 
+                  .ckOOOOkkkkkkOOO0K0c    lKK00OOkkkkkkOOOOOd,                  
+                    ,okOOOOOkkOOO0KKo.    .xKK0OOOkkOOOOOOx:.                   
+                      .:oxOOOO0000x;.      .cOK0OOOOOOOxc,.                     
+                         .;codddl,           .cdkkxdl:'.                        
+                                                ....                            
+                                                                     
+
+    </pre>
+</body>
+</html>
