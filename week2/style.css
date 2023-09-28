@@ -62,7 +62,7 @@ a {
     p::first-letter {
         margin-left: 0.5em; 
         font-size: 2em; 
-        color: rgb(255, 0, 0);
+        color: rgb(0, 55, 255);
     }
     p {
         letter-spacing: 0.05em; 
