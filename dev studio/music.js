@@ -4,7 +4,7 @@ const songLibrary = [
     { title: "All you had to do was stay", artist: "Taylor Swift", cover: "1989.jpeg", file: "All You Had to Do Was Stay _ 24Naijamuzic.com 1.mp3" },
     { title: "Lucid Dreams", artist: "Juice WRLD", cover: "luciddream.jpeg", file: "Juice WRLD - Lucid Dreams (Directed by Cole Bennett).mp3"},
     { title: "Kill Bill", artist: "SZA", cover: "killbill.jpeg", file: "SZA - Kill Bill (Audio).mp3" },
-    { title: "Peaches", artist: "ustin Bieber ft. Daniel Caesar & Giveon", cover: "peaches.jpeg", file: "Justin Bieber - Peaches ft. Daniel Caesar, Giveon.mp3" },
+    { title: "Peaches", artist: "Justin Bieber ft. Daniel Caesar & Giveon", cover: "peaches.jpeg", file: "Justin Bieber - Peaches ft. Daniel Caesar, Giveon.mp3" },
     { title: "Blinding Lights", artist: "The Weeknd", cover: "blinding.jpeg", file: "The Weeknd - Blinding Lights (Official Audio).mp3" },
     { title: "I Don't Wanna Live Forever", artist: "Taylor Swift, ZAYN", cover: "taylor1.jpeg", file: "ZAYN, Taylor Swift - I Dont Wanna Live Forever (Fifty Shades Darker).mp3" },
     { title: "Lover", artist: "Taylor Swift", cover: "lover.jpeg" },
