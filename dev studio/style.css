@@ -1,0 +1,195 @@
+Ds4 Css
+
+/* Basic reset for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Consistent font */
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: flex-start; /* Align content to the start */
+}
+
+.em-text {
+    text-align: left; /* 确保文本靠左对齐 */
+    position: relative; /* 为了定位星星标志 */
+    padding-left: 20px; /* 给星星留出空间 */
+
+}
+
+h3 {
+    margin-bottom: 40px; /* 或你想要的任何具体值 */
+}
+
+
+.em-text::before {
+    content: "\2605"; /* Unicode字符代表实心星星 */
+    display: inline-block;
+    position: absolute; /* 绝对定位 */
+    left: 0; /* 放到最左侧 */
+    transform: translateX(-100%); /* 向左移动星星的整个宽度 */
+    top: 0; /* 定位到顶部，与文本对齐 */
+    color: rgb(244, 68, 182); /* 星星的颜色 */
+}
+
+
+/* Style adjustments for main */
+main {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width */
+    margin: 20px; /* Margin around */
+    text-align: center; /* Center text */
+}
+
+/* Styles for paragraphs within main for controlled text density */
+main .em-text {
+    margin: 20px 200px; /* Specific margin to maintain left and right spacing */
+}
+
+/* Flex container for music player and chart */
+.container {
+    display: flex;
+    justify-content: space-between; /* 保持元素间的距离 */
+    align-items: stretch; /* 让所有子元素高度相等 */
+    width: 100%; /* 根据需要，可以设置为具体的宽度 */
+    max-width: 1200px; /* 或根据实际情况调整 */
+    margin-top: 20px; /* 与上方元素的距离 */
+}
+
+#music-player, .radar-chart-container {
+    display: flex;
+    flex-direction: column; /* 使得内容垂直排列 */
+    justify-content: center; /* 中心对齐内容 */
+    align-items: center; /* 水平居中对齐子元素 */
+    padding: 20px; /* 内边距 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 可选的阴影效果，增加立体感 */
+    border-radius: 8px; /* 圆角边框 */
+    margin: 10px; /* 与相邻元素的距离 */
+    flex: 1; /* 使得元素占据可用空间 */
+    background-color: rgba(241, 241, 241, 0.5); /* 设置背景颜色为半透明 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 可选的阴影效果，增加立体感 */
+}
+
+/* 如果需要，可以针对雷达图SVG进行大小调整 */
+#radarChart {
+    width: 100%; /* 或根据雷达图实际需要调整 */
+    height: auto; /* 保持高度自适应 */
+    /* background-color: rgb(241, 241, 241); */
+    background-color: rgba(241, 241, 241, 0.5); /* 设置背景颜色为半透明 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 可选的阴影效果，增加立体感 */
+}
+
+
+/* Adjusting the radar chart title */
+.radar-chart-container h2 {
+    margin: 20px 0; /* Add some margin around the title for spacing */
+}
+
+/* Radar chart SVG adjustments */
+#radarChart {
+    max-width: 100%; /* 确保SVG不会超出容器 */
+    max-height: 100%; /* 同上，可根据需要调整 */
+}
+
+.request-area {
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px; /* 或根据实际需要调整 */
+    text-align: center;
+    background-color: rgba(241, 241, 241, 0.5); /* 设置背景颜色为半透明 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 可选的阴影效果，增加立体感 */
+    background-color: rgba(255, 255, 255, 0.279); /* 设置输入框背景为半透明 */
+}
+
+.request-area form {
+    margin-top: 20px;
+}
+
+.request-area input[type="text"] {
+    margin: 10px 0; /* 上下边距 */
+    padding: 10px; /* 内边距 */
+    width: calc(100% - 22px); /* 输入框宽度 */
+}
+
+.request-area button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 轻微圆角 */
+    background-color: rgba(79, 79, 79, 0.5); /* 提供半透明的背景色 */
+    color: white; /* 文本颜色为白色以确保可读性 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+    transition: background-color 0.3s; /* 平滑背景色过渡效果 */
+}
+
+.request-area button:hover {
+    background-color: rgba(56, 56, 56, 0.8); /* 鼠标悬停时改变背景色 */
+}
+
+.container, .request-area {
+    width: 80%; /* 或其他具体值，根据需要调整 */
+    max-width: 1200px; /* 保持与container一致 */
+    margin: 20px auto; /* 上下边距为20px，并自动调整左右边距以居中 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px; /* 根据需要调整内边距 */
+}
+
+html {
+    height: 100%; /* 确保 html 元素高度充满整个视口 */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* 确保 body 元素高度充满整个视口 */
+    background: linear-gradient(-45deg, #ff9a9e, #86a8e7, #f1f2b5, #ff9a9e);
+    background-size: cover;
+    background-attachment: fixed; /* 使背景固定，不随内容滚动 */
+    background-repeat: no-repeat;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0%, 100% {
+        background-image: linear-gradient(-45deg, #ff9a9e, #f1f2b5);
+    }
+    25% {
+        background-image: linear-gradient(-45deg, #f1f2b5, #ff9a9e);
+    }
+    50% {
+        background-image: linear-gradient(-45deg, #ff9a9e, #86a8e7);
+    }
+    75% {
+        background-image: linear-gradient(-45deg, #86a8e7, #f1f2b5);
+    }
+}
+
+canvas#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 确保canvas在所有其他内容的背后 */
+}
+
+#music-player button, .radar-chart-container button {
+    background-color: rgba(79, 79, 79, 0.5); /* 提供半透明的背景色 */
+    color: white; /* 文本颜色为白色以确保可读性 */
+    padding: 10px 20px; /* 按钮的内边距 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 添加圆角 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+    transition: background-color 0.3s; /* 平滑背景色过渡效果 */
+}
+
+#music-player button:hover, .radar-chart-container button:hover {
+    background-color: rgba(56, 56, 56, 0.8); /* 鼠标悬停时改变背景色 */
+}
+

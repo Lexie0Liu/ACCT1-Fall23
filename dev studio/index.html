@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <canvas id="starfield"></canvas>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player and Radar Chart Example</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Music Mood Interaction!</h1>
+        <h3>Share your current mood</h3>
+        <p class="em-text">This is a website where you can communicate with others through music. Listening to the same music, everyone's feelings are different - it could be joy, sadness, or indifference. But it's precisely because everyone is different that the music mood interaction emerges! Through this website, you can experience the diverse emotions of others and engage in subtle communication.</p>
+
+        <p class="em-text">Let's start the experience next! On the left is the music playing. On the right is a Hexagon Radar Chart. You can drag the red dot to adjust the value according to your mood at this moment. Remember to press the save button. These generated graphs are the moods of other people listening to music with you!</p>
+    </main>
+    <div class="container">
+        <div id="music-player">
+            <img id="album-cover" src="" alt="Album Cover" style="width: 300px; height:300px;">
+            <h2 id="song-title">Song Title</h2>
+            <p id="artist-name">Artist Name</p>
+            <button id="next-song">Play Next Song</button>
+        </div>
+        <div class="radar-chart-container">
+            <h2>Radar Mood Chart</h2>
+            <p class="em-text">This is your mood shape. You can drag the red dot on the chart to select the value of your mood and create your own shape!</p>
+            <div id="radarChart"></div>
+            <button id="save-chart">Save Chart</button>
+
+        </div>
+    </div>
+    <!-- Request and Answer Section -->
+    <div class="request-area">
+        <h2>Request a song for the next person</h2>
+        <p>What music do you think he/she likes?</p>
+        <form>
+            <label for="song-name">Song name:</label>
+            <input type="text" id="song-name" name="song-name">
+            <label for="artist-name">Artist:</label>
+            <input type="text" id="artist-name" name="artist-name">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="music.js"></script>
+    <script src="sketch.js"></script>
+    <script src="background.js"></script>
+
+   
+</body>
+</html>
+
