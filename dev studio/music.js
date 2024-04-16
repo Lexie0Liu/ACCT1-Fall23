@@ -11,6 +11,7 @@ const songLibrary = [
     { title: "Good 4 You", artist: "Olivia Rodrigo", cover: "good4u.jpeg" },
     { title: "Industry Baby", artist: "Lil Nas X ft. Jack Harlow", cover: "lilnasx.jpeg" },
     { title: "SOUR CANDY", artist: "Lady Gaga & BLACKPINK", cover: "sourcandy.jpeg" },
+    { title: "SOUR CANDY", artist: "Lady Gaga & BLACKPINK", cover: "sourcandy.jpeg" },
     // 省略其他歌曲，确保添加完整信息...
 ];
 
