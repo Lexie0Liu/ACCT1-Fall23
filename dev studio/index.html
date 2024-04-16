@@ -21,7 +21,12 @@
             <img id="album-cover" src="" alt="Album Cover" style="width: 300px; height:300px;">
             <h2 id="song-title">Song Title</h2>
             <p id="artist-name">Artist Name</p>
+            <div class="controls">
+                <button id="play-btn">▶</button> <!-- 使用Unicode字符表示播放 -->
+                <button id="pause-btn">||</button> <!-- 使用Unicode字符表示暂停 -->
+            </div>
             <button id="next-song">Play Next Song</button>
+            <audio id="audio-player"></audio>
         </div>
         <div class="radar-chart-container">
             <h2>Radar Mood Chart</h2>
@@ -46,6 +51,7 @@
     <script src="music.js"></script>
     <script src="sketch.js"></script>
     <script src="background.js"></script>
+    <script src="playmusic.js"></script>
 
    
 </body>

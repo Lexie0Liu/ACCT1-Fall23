@@ -193,3 +193,23 @@ canvas#starfield {
     background-color: rgba(56, 56, 56, 0.8); /* 鼠标悬停时改变背景色 */
 }
 
+#music-player .controls button {
+    background-color: rgba(255, 255, 255, 0.5); /* 半透明的白色背景 */
+    color: rgba(0, 0, 0, 0.69); /* 图标颜色为黑色，以保证对比度 */
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex; /* 使用flex布局使内容居中 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    font-size: 20px; /* 增大图标大小使其更明显 */
+    line-height: 1; /* 正确对齐图标 */
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+#music-player .controls button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* 鼠标悬浮时更不透明 */
+}
