@@ -1,0 +1,219 @@
+/* Image Styling */
+/* Container to hold images */
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of images to next row */
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Centers the images vertically within the row */
+    gap: 20px; /* Adds space between images */
+    margin: 20px 0;
+}
+
+/* Ensures each image takes up equal space */
+.image-container img {
+    max-height: 300px;
+    max-width: 45%; /* Limit the image width to 45% to fit two images per row */
+    height: auto;
+    border-radius: 8px; /* Optional: adds a slight border radius for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
+}
+
+/* Video Container */
+.video-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Add some space around the videos */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Optional: set a max-width */
+    aspect-ratio: 16/9; /* Maintain the video aspect ratio */
+    border-radius: 8px; /* Add rounded corners to videos */
+}
+
+/* Main and Header Styling */
+main, header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Limit the width for a more centered look */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #191919; /* Slightly different background for content */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Add some shadow for depth */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid #3b4f7b; /* Add a subtle bottom border */
+}
+
+/* Header Text */
+/* Modern Headline Styling */
+h1 {
+    font-family: 'Montserrat', sans-serif; /* A clean, modern font */
+    font-size: 3.5rem; /* Large font size for emphasis */
+    font-weight: 900; /* Very bold text for a modern look */
+    color: #ffffff; /* Clean white text */
+    text-align: center;
+    letter-spacing: 2px; /* Add some space between letters for a sleek look */
+    text-transform: uppercase; /* All caps for a strong visual impact */
+    margin: 20px 0;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Subtle line under the headline */
+h1::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #4c68af; /* Use a vibrant color for the underline */
+    margin: 5px auto 0;
+    border-radius: 1px; /* Rounded edges for a modern feel */
+}
+
+/* Hover effect for the headline */
+h1:hover {
+    color: #ba0315; /* Change text color on hover */
+    cursor: pointer; /* Show pointer cursor for interactivity */
+}
+
+h1:hover::after {
+    width: 70%; /* Expand the underline on hover */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Header H3 Styling */
+h3 {
+    text-align: center;
+    background-color: #3b4f7b;
+    margin-left: 60px; /* Adds space on the left outside the h3 */
+    margin-right: 60px; /* Adds space on the right outside the h3 */
+    padding: 10px 20px; /* Adds space inside the h3, including left and right */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+    color: rgb(255, 255, 255); /* Brighten the headers */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add subtle shadow for depth */
+}
+
+/* Horizontal Rule */
+hr {
+    border-bottom: 1px solid #1c1c1c;
+    width: 80%;
+}
+
+/* Emphasized Text */
+.em-text {
+    font-style: italic;
+}
+
+/* Links Styling */
+a {
+    color: blue;
+    text-decoration: none;
+    background-color: rgb(248, 177, 250);
+    text-align: left;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+a:hover {
+    color: white; /* Change the color on hover */
+    background-color: rgb(132, 192, 237); /* Add a nice hover effect */
+}
+
+/* Paragraph Styling */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8; /* Adds comfortable line spacing */
+    color: #ffffff;
+    width: 110ch; /* Limits the width to a compact character count */
+    max-width: 80%; /* Ensures it doesn't get too wide */
+    margin: 20px auto; /* Centers the block on the page */
+    padding: 10px; /* Adds a bit of padding around the text */
+    text-align: justify; /* Justifies the text to make lines more even */
+    border-radius: 8px; /* Optional: Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+/* Red Text Styling */
+.red-text {
+    color: rgb(113, 150, 220); /* Adjust red text to be more readable on dark background */
+}
+
+/* Canvas for the Background Animation */
+#backgroundCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind the content */
+    background-color: #5d5d5d; /* Optional: background color for the canvas */
+
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(44, 51, 77); /* Sets the background color to dark */
+    color: rgb(132, 192, 237); /* Sets the text color */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4a61aa;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #3b4f7b;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .video-container iframe {
+        max-width: 100%; /* Ensure videos are responsive */
+    }
+
+    h3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Week6 Assignment</title>
+</head>
+
+<body>
+    <!-- Canvas for the dynamic background -->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <header>
+        <h1>Simulation and Design Brief</h1>
+    </header>
+
+    <main class="green-text">
+        <h3>Prompt: Flooding</h3>
+        <div class="image-container">
+            <img src="flooding1.jpeg" alt="XR Origin">
+            <img src="flooding2.jpeg" alt="Plant Prefab">
+            <img src="reference1.png" alt="XR Origin">
+            <img src="reference2.png" alt="Plant Prefab">
+        </div>
+
+        <p class="em-text red-text">My prompt is flood, and the first thing that comes to my mind is the cities and villages destroyed by floods in the news. But at the same time, I want to add some apocalyptic and dystopian elements to make people reflect on this flood.</p>
+
+        <h3>How to achieve</h3>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SgCezAO3Sn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="image-container">
+            <img src="float1.png" alt="Launch Unity">
+            <img src="float2.png" alt="Launch Unity">
+        </div>
+
+        <p class="em-text red-text">I initially tried to make objects float on water in Unity, and tried it with several cubes. The above is my code for floating objects.</p>
+
+        <h3>UnderWater Shader in Unity</h3>
+
+        <div class="image-container">
+            <img src="without.png" alt="An image of setup">
+            <img src="with.png" alt="An image of setup">
+            <p class="em-text red-text">In order to make the water effect more realistic, I added an underwater shader. From the two pictures above, you can see a clear contrast. The picture on the right shows the effect of adding a shader to the camera.</p>
+
+            <img src="underwater1.png" alt="Launch Unity">
+            <img src="underwater2.png" alt="Launch Unity">
+            <p class="em-text red-text">This is the Camera Under Water Effect code.</p>
+
+            <img src="shader1.png" alt="Launch Unity">
+            <img src="shader2.png" alt="Launch Unity">
+            <p class="em-text red-text">This is the Under Water Shader code.</p>
+        </div>
+
+        <h3>Build Scene (First Version)</h3>
+        <div class="image-container">
+            <img src="build1.png" alt="A Simple VR Controller model">
+            <img src="build2.png" alt="A Simple VR Controller model">
+        </div>
+        
+        <p class="em-text red-text">This is the scene I built at the beginning. I floated some daily objects in the village on the water. I added Mesh Collider and Rigidbody, and needed to cancel gravity and add the previous floating code. At the same time, I also added Fog to make it look more mysterious.</p>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mPSftRF9GZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <p class="em-text red-text">Then I started to try to add a controllable player. At first, I wrote the code to control it myself. WASD controlled forward, backward, left and right, Q and E controlled sink and lift. I found that the effect was not good, and the movement was not smooth enough. And I set the player to be a fishing boat, so when he dived into the water, it felt a little strange.</p>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NUKO5MiDhKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <p class="em-text red-text">So I set the control code to the third-person perspective in Unity Asset Store, and set the player to a submarine/spaceship shape, which looks very different from the local environment, so it fits the doomsday story I want.</p>
+
+        <h3>Final Scene</h3>
+
+        <div class="image-container">
+            <img src="scen1.png" alt="A Simple VR Controller model">
+            <img src="scen2.png" alt="A Simple VR Controller model">
+            <p class="em-text red-text">Then I changed the skybox to make it look like there were a lot of exhaust gas and tall buildings in the distance, and the sky showed the color of doomsday.</p>
+            <img src="detail1.png" alt="A Simple VR Controller model">
+            <img src="detail2.png" alt="A Simple VR Controller model">
+            <p class="em-text red-text">To make the dystopia feel stronger, I also added some giant moving spiders that crawl on land and in water.</p>
+        </div>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jJ02PR8PFss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="em-text red-text">This is my final video.</p>
+    </main>
+
+    <footer>
+        <!-- Footer content here if needed -->
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="background.js"></script>
+</body>
+</html>
