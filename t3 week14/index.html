@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Week11 Assignment.</title>
+    <title>Week14 Assignment.</title>
   
 </head>
 <header>
@@ -16,7 +16,7 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background-color: rgb(213, 125, 157);
+            background-color: rgb(55, 55, 55);
         }
         .image-container {
         text-align: center;
@@ -32,49 +32,230 @@
     
 
     <main class="green-text">
-        <h1>Text as material and artifact project brief</h1>
+        <h1>Digital Materialities Brief</h1>
    
         
 
         
        
-        <h3>Reference & Inspiration</h3>
+        <h3>Inspiration</h3>
 
        
         
         </div>
-        <p class="em-text red-text">This project draws inspiration from OpenAI's DALL·E and the high-quality photography available on Unsplash. DALL·E's ability to transform textual prompts into creative visual outputs showcases the potential of AI in generative art, while Unsplash serves as a benchmark for authentic and realistic imagery. By comparing these two sources, the project aims to explore the intersection of technology and reality, highlighting differences in style, focus, and creative interpretation.</p>
-        
-       
-        </div>
-
-       
-         <div class="image-container">
-         <img src="openai.jpg" alt="An image of Taylor swify">
-         <img src="unsplash.jpeg" alt="An image of Taylor swify">
-        
-         
-
-
-        </div>
-
-        <h3>Final Result</h3>
-        <div class="image-container">
-        <img src="IMG_4606.jpeg" alt="An image of Taylor swify">
-        <img src="IMG_4607.jpeg" alt="An image of Taylor swify">
+        <p class="em-text red-text">I want to create a visual experience that captures the fleeting beauty and chaotic energy of a cosmic storm. Using Shadertoy, my goal is to design an interactive shader that combines dynamic, layered particle effects with fluid motion, creating the sensation of standing at the edge of a galactic tempest. The visuals will convey a sense of awe and mystery, as swirling energy fields, cascading light waves, and sudden bursts of radiant lightning simulate the unpredictable and raw power of the universe. This piece aims to evoke the viewer's imagination, transporting them into a boundless, otherworldly space where chaos and beauty coexist.</p>
         
    
-        </div>
-        <p class="em-text red-text">I used a light color as the background. On the left is the unsplash api. After clicking the search button, real-world photos will appear. On the right, AI-generated images will be generated based on the words you provided, and prompts will be given during the search process. Finally, a comparative analysis result of the two pictures will be generated.</p>
        
  
-        <h3>Final Video</h3>
-            <div class="video-container">
-                <iframe width="900" height="506" src="https://www.youtube.com/embed/fv_0jq9Q0j4" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
+        <h3>1. Sunrise Shader and Link</h3>
+
+        <p>
+            Sunrise series source code, 
+            <a href="https://docs.google.com/document/d/1SgLR4Y3rHAWsMQohNuRHkzPsrq_r2n-Om0fER_-O8c8/edit?tab=t.0" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               please click here
+            </a>.
+        </p>
+
+        <p>
+            This code creates a sunrise scene by blending a gradient sky, a smooth mountain shape, and a glowing sun using functions like 
+            <span class="highlight">mix</span> for color blending, 
+            <span class="highlight">smoothstep</span> for soft transitions, and 
+            <span class="highlight">exp</span> to simulate the sun's glow. 
+            It combines these elements into the final color output.
+        </p>
+            
+        <div class="image-container">
+            <img src="2...png" alt="An image of Taylor Swift" class="centered-image">
+            <img src="2.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+        <p>The code changes include the addition of a <span class="highlight">sunrise</span> gradient for the background, two <span class="highlight">mountain</span> layers with different scales (<span class="highlight">m1</span> and <span class="highlight">m2</span>), and a dynamic <span class="highlight">sun</span> effect using the sine function to animate the sun's position.</p>
         
-            </div>
+        <div class="image-container">
+            <img src="1...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="1.2.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+        <p>The changes in this shader code include the addition of a <span class="highlight">generateSun</span> function for creating a single dynamic sun with a glowing effect and color animation, a <span class="highlight">kaleidoscopeSuns</span> function to generate 16 rotating suns in a circular pattern with unique colors and timing, and a modification to the <span class="highlight">mountain</span> function, which now includes dynamic deformation to make the terrain undulate over time.</p>
+
+        <div class="image-container">
+            <img src="3...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="3.2.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>Shader 4 adds a <span class="highlight">`waterRipple`</span> function for dynamic ripples and a <span class="highlight">`rainbowKaleidoscope`</span> function for colorful patterns, replacing the <span class="highlight">sun effect</span> and enhancing the background with <span class="highlight">ripples</span> and <span class="highlight">rainbow patterns</span>.</p>
+     
+        <div class="image-container">
+            <img src="5...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="5.2.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+        <h3>2. Swirl Shader and Link</h3>
+
+        <p>
+            Swirl series source code, 
+            <a href="https://docs.google.com/document/d/15CSTwrqhFUFWzk4BltCiekkviRVUzADejFI8p2fr324/edit?tab=t.0" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               please click here
+            </a>.
+        </p>
+
+        <p>
+            This code uses a <span class="highlight">`noise`</span> function and a <span class="highlight">`smoothNoise`</span> function to create randomness, a <span class="highlight">`fbm`</span> function for complex textures, and <span class="highlight">polar coordinates</span> to generate spinning patterns. It combines <span class="highlight">`sin`</span> and <span class="highlight">`cos`</span> for dynamic spirals and wave effects, with <span class="highlight">`smoothstep`</span> to soften transitions, and enhances the visual with <span class="highlight">gradient coloring</span> and <span class="highlight">glowing effects</span>.
+            </p>
+            
+
+        <div class="image-container">
+            <img src="6...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="6.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            By adding dynamic <span class="highlight">radial energy waves</span>, smoother <span class="highlight">particle effects</span>, and richer <span class="highlight">color layers</span> with a more prominent <span class="highlight">glow</span>, creating a vibrant and energetic scene.
+            </p>
+            
+
+        <div class="image-container">
+            <img src="7...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="7.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            Shader 3 introduces <span class="highlight">swirl effects</span> by combining angular sinusoidal waves and <span class="highlight">FBM-based noise</span> (<span class="highlight">`baseSwirl`</span> and <span class="highlight">`swirlNoise`</span>), enhancing Shader 2 with dynamic, rotating patterns. The <span class="highlight">particle system</span> is refined with smoother blending (<span class="highlight">`smoothstep`</span>) and a vibrant <span class="highlight">neon color palette</span>, creating a more immersive and visually complex glowing scene.
+            </p>
+            
+
+        <div class="image-container">
+            <img src="8...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="8.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            By adding <span class="highlight">radial distortion</span> through modified UV coordinates, introducing a <span class="highlight">wave ripple effect</span> tied to time and distance, and enhancing the <span class="highlight">swirl patterns</span> with layered motion. The overall effect is a more dynamic, flowing scene with richer spatial depth and intricate movement.
+            </p>
+            
+
+        <div class="image-container">
+            <img src="9...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="9.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+
+        <h3>3. Starlight Shader and Link</h3>
+
+        <p>
+            Starlight series source code, 
+            <a href="https://docs.google.com/document/d/1y-qAKHmTs7jFNjTSgOspiFsral4IKRz4QTEby2Jly5o/edit?tab=t.0" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               please click here
+            </a>.
+        </p>
+
+        <p>
+            Shader 1 creates a dynamic, rotating <span class="highlight">ripple effect</span> centered on the screen. It calculates the <span class="highlight">distance</span> (<code>length()</code>) and <span class="highlight">angle</span> (<code>atan()</code>) from each pixel to the center, then uses a <span class="highlight">sine wave</span> (<code>sin()</code>) to generate ripples that change over time (<code>iTime</code>). The colors dynamically shift based on the <span class="highlight">angle</span> and <span class="highlight">ripple intensity</span>.
+            </p>            
+
+        
+
+        <div class="image-container">
+            <img src="14...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="14.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+
+        <p>
+            Shader 2 introduces a <span class="highlight">radial gradient</span> (<code>mix()</code>) and a <span class="highlight">central glow</span> (<code>exp()</code>), while enhancing the <span class="highlight">ripple effect</span> by tying it to the <span class="highlight">radial distance</span> (<code>radius</code>), adding more dynamic color changes based on <span class="highlight">angle</span> and <span class="highlight">distance</span>.
+            </p>
+            
+            
+
+        <div class="image-container">
+            <img src="11...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="11.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            Shader 3 introduces new functions for added complexity: <span class="highlight">`noise()`</span> to generate randomness, <span class="highlight">`dynamicGrid()`</span> for a moving grid effect, and <span class="highlight">`polygonEdge()`</span> to detect and render dynamic polygon edges. 
+            </p>
+            
+
+        <div class="image-container">
+            <img src="15...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="15.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            Adds <span class="highlight">radial distortion</span> with dynamic scaling, a <span class="highlight">rotation matrix</span> for coordinate rotation, and a <span class="highlight">kaleidoscope effect</span> using angle mirroring. It also replaces the <span class="highlight">grid</span> and <span class="highlight">polygon edges</span> from Shader 3 with a <span class="highlight">checkerboard texture</span>, creating symmetrical, dynamic patterns.
+            </p> 
+            
+        
+
+        <div class="image-container">
+            <img src="10...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="10.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            Adds <span class="highlight">concentric rings</span> and <span class="highlight">polygon edges</span> to the kaleidoscope effect, using <span class="highlight">`sin()`</span> and <span class="highlight">`step()`</span> functions. These new geometric shapes are blended with dynamic colors, creating more intricate and complex patterns compared to Shader 2.
+            </p>
+        
+
+        <div class="image-container">
+            <img src="12...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="12.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            Introduces two new functions: <span class="highlight">`blackHole()`</span> for creating a central distortion effect by modifying UV coordinates with a strength-based transformation, and <span class="highlight">`dynamicGrid()`</span> for generating a moving, pulsing grid pattern using <span class="highlight">`fract()`</span>, <span class="highlight">`step()`</span>, and trigonometric functions like <span class="highlight">`sin()`</span> and <span class="highlight">`cos()`</span>. 
+            </p>
+            
+
+        <div class="image-container">
+            <img src="13...gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="13.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            It replaces the <span class="highlight">black hole distortion</span> with new effects: a <span class="highlight">rotating grid</span>, <span class="highlight">concentric ripples</span>, a <span class="highlight">kaleidoscope effect</span>, and <span class="highlight">dynamic polygons</span>, adding symmetrical and geometric patterns for a more structured and visually dynamic scene.
+            </p>
+            
+
+        <div class="image-container">
+            <img src="16..gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="16.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+        <p>
+            Shader 8 adds two new distortion functions: <span class="highlight">`waveDistortion()`</span>, which introduces horizontal and vertical wave-like deformations, and <span class="highlight">`radialDistortion()`</span>, which applies a twisting effect based on radial distance. 
+            </p>
+            
+
+        <div class="image-container">
+            <img src="17..gif" alt="An image of Taylor Swift" class="centered-image">
+            <img src="17.1.png" alt="An image of Taylor Swift" class="centered-image">
+           
+        </div>
+
+
+
+
 
          
        

@@ -7,9 +7,13 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: rgb(25, 25, 25); /* 深色背景 */
-    color: rgb(243, 231, 144); /* 浅蓝色文字，与背景形成对比 */
+    color: rgb(252, 233, 255); /* 浅蓝色文字，与背景形成对比 */
 }
 
+.highlight {
+    color: #70fff1; /* 高亮文字颜色 */
+    font-weight: bold; /* 加粗以突出显示 */
+}
 
 h1 {
     text-align: center;
@@ -23,7 +27,7 @@ h2 {
 
 h3 {
     text-align: center;
-    background-color: #fc6d00; /* 深蓝背景 */
+    background-color: #775cff; /* 深蓝背景 */
     color: white; /* 白色文字 */
     margin: 20px auto;
     padding: 10px 20px;
@@ -49,26 +53,26 @@ p {
 a {
     color: blue;
     text-decoration: none;
-    background-color: rgb(254, 214, 255); /* 背景颜色 */
+    background-color: rgb(197, 181, 255); /* 背景颜色 */
     text-align: left;
     padding: 5px 10px; /* 增加链接的内边距 */
     border-radius: 4px;
 }
 
 .image-container {
-    display: flex; /* 使用 Flex 布局 */
-    justify-content: center; /* 水平居中 */
+    display: flex; /* Flex 布局 */
+    justify-content: center; /* 水平居中对齐 */
     gap: 20px; /* 图片之间的间距 */
-    flex-wrap: wrap; /* 如果屏幕宽度不足，图片会换行 */
+    flex-wrap: nowrap; /* 禁止换行，强制所有图片保持一行 */
     margin-bottom: 20px;
+    overflow-x: auto; /* 如果图片过多，允许水平滚动 */
 }
 
-/* 图片样式 */
 img {
-    max-width: 400px; /* 控制图片最大宽度 */
+    max-width: 400px; /* 限制图片的最大宽度，确保视觉一致性 */
     height: auto; /* 保持图片比例 */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* 添加圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
 }
 
 
